@@ -13,6 +13,7 @@ while [ $eleccion -lt 1 ] || [ $eleccion -gt 30 ]; do
 done
 
 # con esta operación calculamos el indice del array de tal forma que le restamos una posición a la eleccion del usuario y sacamos el resto para obtener el indice
+# formula expansion aritmetica "variable=$(( operación matemática ))""
 dia=$(( (eleccion-1) % 7 ))
 
 #Extraemos la posición del array que queremos
