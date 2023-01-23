@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#Nos guardamos un array con los días de la semana hasta completar 30 posiciones
-diasMes=("Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo" "Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo" "Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo" "Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo" "lunes" "martes")
+#Nos guardamos un array con los días de la semana 
+diasMes=( "Lunes" "Martes" "Miercoles" "Jueves" "Viernes" "Sabado" "Domingo" )
 
 #Pedimos el dia de la semsana en numero
 read -p "Dime el día de la semana en numero: " eleccion
@@ -12,5 +12,8 @@ while [ $eleccion -lt 1 ] || [ $eleccion -gt 30 ]; do
     read -p "Dime el día de la semana en numero " eleccion
 done
 
+# con esta operación calculamos el indice del array de tal forma que le restamos una posición a la eleccion del usuario y sacamos el resto para obtener el indice
+dia=$(( (eleccion-1) % 7 ))
+
 #Extraemos la posición del array que queremos
-echo "Hoy estamos a ${diasMes[$eleccion - 1]}"
+echo "Hoy estamos a ${diasMes[$dia]}"
