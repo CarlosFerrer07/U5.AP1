@@ -22,4 +22,7 @@ case $genero in
     *) echo "Has introducido un numero no valido" ;;
 esac
 
-echo "Usted ha elegido el libro $libro cuyo año de lanzamiento fue $anyo su editorial fue $editorial dentro del genero $genero" >> bdlibros.txt
+echo "LIBRO $libro" >> bdlibros.txt
+echo "AÑO $anyo">> bdlibros.txt
+echo "EDITORIAL:$editorial">> bdlibros.txt
+echo "GENERO: $genero">> bdlibros.txt
