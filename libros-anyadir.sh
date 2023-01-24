@@ -24,5 +24,5 @@ esac
 
 echo "LIBRO $libro" >> bdlibros.txt
 echo "AÑO $anyo">> bdlibros.txt
-echo "EDITORIAL:$editorial">> bdlibros.txt
-echo "GENERO: $genero">> bdlibros.txt
+echo "EDITORIAL $editorial">> bdlibros.txt
+echo "GENERO $genero">> bdlibros.txt

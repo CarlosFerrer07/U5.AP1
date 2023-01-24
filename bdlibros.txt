@@ -1,4 +1,7 @@
 LIBRO merlin
 AÑO 1999
-EDITORIAL:anaya
-GENERO: Comedia
+EDITORIAL anaya
+GENERO Comedia
+LIBRO El principe de la niebla
+LIBRO El palacio de la medianoche
+LIBRO Luces de septiembre
