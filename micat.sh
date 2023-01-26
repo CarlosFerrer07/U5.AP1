@@ -18,7 +18,7 @@ fi
 if [ "$2" ]; then #BASICAMENTE "$2" comprueba si existe
     if [ $2 = -r ]; then
         echo "----------"
-        cat $1
+        tac $1
     fi
 fi
 
