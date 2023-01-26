@@ -1,7 +1,5 @@
-LIBRO merlin
-AÑO 1999
-EDITORIAL anaya
-GENERO Comedia
-LIBRO El principe de la niebla
-LIBRO El palacio de la medianoche
-LIBRO Luces de septiembre
+Un mundo feliz 1999 Anaya Misterio
+El palacio de la medianoche 1995 el micalet galactic Misterio
+Los pilares de la tierra 1951 Ed drama
+Hola 1790 brwl 
+Hola 1980 Anaya drama
