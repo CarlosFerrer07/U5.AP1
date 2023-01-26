@@ -13,7 +13,7 @@ done
 
 #nos guardamos la variable resto
 
-let resto=eleccion%2
+resto=$((eleccion%2))
 
 #condicion para saber si es par o impar
 if [ $resto -eq 0 ]; then
