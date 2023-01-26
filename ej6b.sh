@@ -8,3 +8,4 @@ RANDOM=$$
 
 shuf -i $rango1-$rango2 -n $aleatorios
 
+
