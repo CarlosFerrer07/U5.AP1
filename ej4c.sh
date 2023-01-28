@@ -5,7 +5,7 @@ echo "Introduce el operador (+, -, *, / ): "$2
 echo "Introduce el tercer valor: "$3
 
 
-if [ $2 = "*" ]; then
+if [[ $2 == "*" ]]; then
     multiplicacion=$(($1 * $3))
     echo $multiplicacion
 elif [ $2 != "+" ] && [ $2 != "-" ] && [ $2 != "/" ]; then
@@ -14,5 +14,17 @@ else
     operacion=`expr $1 $2 $3`
     echo $operacion
 fi
+
+#otra forma usando case
+
+case $2 in 
+    "+") operacion=$(($1 + $3));;
+    "-") operacion=$(($1 - $3));;
+    "*") operacion=$(($1 * $3));;
+    "/") operacion=$(($1 / $3));;
+    *) echo "el operador introducido no es correcto"
+esac
+echo $operacion
+
 
 
